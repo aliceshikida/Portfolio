@@ -83,7 +83,7 @@ A organização do projeto segue as diretrizes da Sprint 03 do Laboratório:
 ## 👤 Matheus Felipe
 | Home PT | Home EN |
 | --- | --- |
-| <img src="/caminho/para/print-pt.png" width="250px" alt="Versão PT"> | <img src="/caminho/para/print-en.png" width="250px" alt="Versão EN"> |
+| <img src="./Documents/Prints/PrintPortfolioMatheus.png" width="250px" alt="Versão PT"> | <img src="./Documents/Prints/PrintPortfolioMatheusEn.png" width="250px" alt="Versão EN"> |
 
 ## 👤 Alice Shikida
 | Home PT | Home EN |
