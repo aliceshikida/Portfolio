@@ -72,10 +72,11 @@ A organização do projeto segue as diretrizes da Sprint 03 do Laboratório:
 
 | 👤 Nome            | :octocat: GitHub                                                                 | 💼 LinkedIn                                                                    |
 |--------------------|----------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| **Matheus Felipe** | [GitHub](https://www.google.com/search?q=https://github.com/MatheusFelipeCorrea) | [LinkedIn](https://www.google.com/search?q=https://linkedin.com/in/seu-perfil) |
-| **Alice Shikida**  | [GitHub](https://www.google.com/search?q=https://github.com/MatheusFelipeCorrea) | [LinkedIn](https://www.google.com/search?q=https://linkedin.com/in/seu-perfil) |
+| **Matheus Felipe** | [GitHub](https://github.com/MatheusFelipeCorrea) | [LinkedIn](https://www.linkedin.com/in/matheus-felipe-correa-29b262265/) |
+| **Alice Shikida**  | [GitHub](https://github.com/aliceshikida) | [LinkedIn](https://www.linkedin.com/in/alice-shikida/) |
 ---
 
+https://github.com/MatheusFelipeCorrea
 ## 🎥 Demonstração
 
 ## 👤 Matheus Felipe
