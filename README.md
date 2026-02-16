@@ -34,9 +34,10 @@ O foco do projeto é a **identidade visual coerente** e a **experiência do usu�
 
 A organização do projeto segue as diretrizes da Sprint 03 do Laboratório:
 
-* **[Manual de Instalação e Configuração de variaveis de ambiente ](https://www.google.com/search?q=./README.md%23instala%C3%A7%C3%A3o-e-execu%C3%A7%C3%A3o):** Como rodar o ambiente localmente e Configurações necessárias para o envio de e-mails..
-* **[Demonstração Online](https://www.google.com/search?q=https://seu-portfolio.vercel.app):** Link oficial da aplicação hospedada na nuvem.
-* **[Wireframes Iniciais]():**
+* **[Manual de Instalação e Configuração de variaveis de ambiente ](https://github.com/MatheusFelipeCorrea/Portifolio/blob/main/Documents/Manual.md):** Como rodar o ambiente localmente e Configurações necessárias para o envio de e-mails..
+* **[Demonstração Online](https://portifolio-seven-sable.vercel.app/):** Link oficial da aplicação hospedada na nuvem (Matheus Felipe).
+* **[Demonstração Online](https://www.google.com/search?q=https://seu-portfolio.vercel.app):** Link oficial da aplicação hospedada na nuvem (Alice Shikida).
+* **[Wireframes Iniciais](https://github.com/MatheusFelipeCorrea/Portifolio/blob/main/Documents/Wireframes/Wireframe%20Inicial%20Matheus.pdf):** Link para o primeiro protótipo do Portfolio do aluno Matheus Felipe Correa.
 
 
 ---
@@ -76,7 +77,7 @@ A organização do projeto segue as diretrizes da Sprint 03 do Laboratório:
 | **Alice Shikida**  | [GitHub](https://github.com/aliceshikida) | [LinkedIn](https://www.linkedin.com/in/alice-shikida/) |
 ---
 
-https://github.com/MatheusFelipeCorrea
+
 ## 🎥 Demonstração
 
 ## 👤 Matheus Felipe
