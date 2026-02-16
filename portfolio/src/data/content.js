@@ -9,10 +9,11 @@ pt: {
   },
   hero: {
     greeting: 'Oie, eu sou',
-    name: 'Matheus Felipe Correa', // 👈 ALTERE SEU NOME
+    name: 'Matheus Felipe Correa',
     title: 'Engenheiro de Software',
-    description: 'Desenvolvedor Full Stack apaixonado por criar soluções inovadoras',
+    description: 'Estudante de Engenharia de Software na PUC Minas e Estagiário Full-Stack na dti digital. Focado em criar soluções robustas unindo a performance do .NET e Node.js com a interatividade do React. Busco sempre o equilíbrio entre código limpo e uma excelente experiência do usuário (UX).',
     cta: 'Ver Projetos',
+    cta2: 'Entrar em contato',
     downloadCV: 'Baixar Currículo'
   },
   about: {
@@ -66,10 +67,11 @@ en: {
   },
   hero: {
     greeting: 'Hi, I am',
-    name: 'Matheus Felipe Correa', // 👈 CHANGE YOUR NAME
+    name: 'Matheus Felipe Correa',
     title: 'Software Engineer',
-    description: 'Full Stack Developer passionate about creating innovative solutions',
+    description: 'Software Engineering student at PUC Minas and Full-Stack Intern at dti digital. Focused on creating robust solutions by combining the performance of .NET and Node.js with the interactivity of React. I always strive for a balance between clean code and an excellent user experience (UX).',
     cta: 'View Projects',
+    cta2: 'Reach out',
     downloadCV: 'Download CV'
   },
   about: {

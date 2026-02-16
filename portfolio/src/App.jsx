@@ -1,14 +1,27 @@
+import React from 'react';
+import { LanguageProvider } from './context/LanguageContext';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Experience from './components/Experience'; // Ou Journey
+import Projects from './components/Projects';
+import Technologies from './components/Technologies.jsx';
+import Contact from './components/Contact';
+import Footer from './components/Footer'
+
 function App() {
-return (
-  <div className="min-h-screen bg-dark text-white">
-    <h1 className="text-4xl font-orbitron text-primary text-center pt-20">
-      Portfolio em construção...
-    </h1>
-    <p className="text-center mt-4 text-gray-400">
-      Se você está vendo isso, está funcionando! ✅
-    </p>
-  </div>
-);
+    return (
+        <LanguageProvider>
+            <div className="bg-dark min-h-screen text-white font-sans selection:bg-primary selection:text-black">
+                <Navbar />
+                <Hero />
+                <Experience />
+                <Projects />
+                <Technologies />
+                <Contact />
+                <Footer/>
+            </div>
+        </LanguageProvider>
+    );
 }
 
 export default App;
