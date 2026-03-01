@@ -31,7 +31,7 @@ const Experience = () => {
                 >
                     {language === 'pt' ? 'Minha Jornada' : 'My Journey'}
                 </motion.h2>
-                <div className="w-24 h-1 bg-primary mx-auto shadow-[0_0_10px_#00FF00] rounded-full"></div>
+                <div className="w-24 h-1 bg-primary mx-auto shadow-[0_0_10px_#A78BFA] rounded-full"></div>
             </div>
 
             <div ref={ref} className="container mx-auto px-4 relative max-w-5xl">
@@ -41,7 +41,7 @@ const Experience = () => {
                 {/* Linha Neon */}
                 <motion.div
                     style={{ scaleY }}
-                    className="absolute left-8 md:left-1/2 top-0 bottom-0 w-[2px] bg-primary origin-top md:-translate-x-1/2 shadow-[0_0_15px_#00FF00] z-10"
+                    className="absolute left-8 md:left-1/2 top-0 bottom-0 w-[2px] bg-primary origin-top md:-translate-x-1/2 shadow-[0_0_15px_#A78BFA] z-10"
                 />
 
                 <div className="space-y-12">
@@ -68,7 +68,7 @@ const TimelineItem = ({ data, index }) => {
             <div className="hidden md:block w-5/12" />
 
             {/* Ícone Central */}
-            <div className="absolute left-8 md:left-1/2 -translate-x-1/2 z-20 flex items-center justify-center w-12 h-12 bg-dark border-2 border-primary rounded-full group-hover:bg-primary group-hover:shadow-[0_0_20px_#00FF00] transition-all duration-300">
+            <div className="absolute left-8 md:left-1/2 -translate-x-1/2 z-20 flex items-center justify-center w-12 h-12 bg-dark border-2 border-primary rounded-full group-hover:bg-primary group-hover:shadow-[0_0_20px_#A78BFA] transition-all duration-300">
                 <span className="text-primary group-hover:text-dark transition-colors">
                     {data.type === 'academic' ? <FaGraduationCap size={20} /> : <FaBriefcase size={18} />}
                 </span>
@@ -76,7 +76,7 @@ const TimelineItem = ({ data, index }) => {
 
             {/* Card */}
             <div className="ml-20 md:ml-0 w-full md:w-5/12">
-                <div className="bg-dark-lighter p-6 rounded-xl border border-white/5 hover:border-primary/50 transition-all duration-300 relative group-hover:shadow-[0_0_15px_rgba(0,255,0,0.1)]">
+                <div className="bg-dark-lighter p-6 rounded-xl border border-white/5 hover:border-primary/50 transition-all duration-300 relative group-hover:shadow-[0_0_15px_rgba(167,139,250,0.15)]">
 
                     <span className="font-orbitron text-primary text-sm tracking-wider mb-2 block font-bold">
                         {data.year}

@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../hooks/useLanguage';
-import { FaAward, FaSearch } from 'react-icons/fa';
+import { FaAward } from 'react-icons/fa';
 import TechBadge from './TechBadge';
 import PDFModal from './PDFModal';
 
@@ -21,43 +21,53 @@ const Technologies = () => {
     "AdobePS", "Figma", "Swift", "Trello", "Jira", "Todoist"
   ];
 
-  // Dados dos Certificados e Pesquisas
-  // Mantive os tipos como chaves ("research", "certificate") para facilitar a tradução
+  // Dados dos Certificados (pt e en)
   const docs = [
     {
-      title: "Segurança na Injeção de Dependência",
-      file: "/pdfs/Segurança_na_Injeção_de_Dependência__Melhores_Práticas_em_Sistemas_Orientados_a_Objetos.pdf",
-      type: "research", // Use chave interna
-      icon: <FaSearch />
-    },
-    {
-      title: "Red Hat System Admin I",
-      file: "/pdfs/certificates/CourseAttendance20250723-31-9dw13f.pdf",
+      titlePt: "Microsoft Certified: Azure Fundamentals (AZ-900) – Conclusão: 07/2025",
+      titleEn: "Microsoft Certified: Azure Fundamentals (AZ-900) — Completed: July 2025",
       type: "certificate",
       icon: <FaAward />
     },
     {
-      title: "GFT Start #7 Java",
-      file: "/pdfs/certificates/GFTStart.pdf",
+      titlePt: "Introduction to Cloud Computing 101: AWS (2025) – Conclusão: 08/2025",
+      titleEn: "Introduction to Cloud Computing 101: AWS (2025) — Completed: August 2025",
       type: "certificate",
       icon: <FaAward />
     },
     {
-      title: "Algoritmos e Programação com Swift",
-      file: "/pdfs/certificates/Conceitos_e_Fundamentos_Algoritmos_e_Programação_Orientada_a_Objetos_com_Swift-Certificado_1815.pdf",
+      titlePt: "Algoritmos e Programação Orientada a Objetos com Swift: HackaTruck – 50 horas – Conclusão: 04/2025",
+      titleEn: "Algorithms and Object-Oriented Programming with Swift — HackaTruck — 50 hours — Completed: April 2025",
+      type: "certificate",
+      icon: <FaAward />
+    },
+    {
+      titlePt: "Full Stack Developer (C#, React): XP Inc. / DIO – 127 horas – Conclusão: 05/2025",
+      titleEn: "Full Stack Developer (C#, React) — XP Inc. / DIO — 127 hours — Completed: May 2025",
+      type: "certificate",
+      icon: <FaAward />
+    },
+    {
+      titlePt: "Java COMPLETO: Programação Orientada a Objetos + Projetos: Udemy – 54,5 horas – Conclusão: 11/2024",
+      titleEn: "Complete Java: Object-Oriented Programming + Projects — Udemy — 54.5 hours — Completed: November 2024",
+      type: "certificate",
+      icon: <FaAward />
+    },
+    {
+      titlePt: "Oracle SQL, PL/SQL e Modelagem de Banco de Dados: Udemy – 30 horas – Conclusão: 11/2024",
+      titleEn: "Oracle SQL, PL/SQL, and Database Modeling — Udemy — 30 hours — Completed: November 2024",
+      type: "certificate",
+      icon: <FaAward />
+    },
+    {
+      titlePt: "Power Bi Aplicado: Udemy – 23 horas – Conclusão: 04/2024",
+      titleEn: "Applied Power BI — Udemy — 23 hours — Completed: April 2024",
       type: "certificate",
       icon: <FaAward />
     }
   ];
 
-  // Função auxiliar para traduzir o tipo
-  const getTranslatedType = (type) => {
-    if (language === 'pt') {
-      return type === 'research' ? 'Pesquisa' : 'Certificado';
-    } else {
-      return type === 'research' ? 'Research' : 'Certificate';
-    }
-  };
+  const getTranslatedType = () => language === 'pt' ? 'Certificado' : 'Certificate';
 
   return (
       <section id="technologies" className="py-20 bg-dark relative">
@@ -89,7 +99,7 @@ const Technologies = () => {
                 className="text-3xl font-orbitron font-bold text-white mb-8 flex items-center gap-3"
             >
               <span className="text-primary">/</span>
-              {language === 'pt' ? 'Certificações & Pesquisas' : 'Certificates & Research'}
+              {language === 'pt' ? 'Certificações' : 'Certificates'}
             </motion.h2>
 
             <div className="space-y-4">
@@ -99,19 +109,19 @@ const Technologies = () => {
                       initial={{ opacity: 0, y: 10 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ delay: i * 0.1 }}
-                      onClick={() => setSelectedPdf(doc)}
-                      className="flex items-center justify-between p-4 bg-dark-lighter border border-gray-800 rounded-lg hover:border-primary cursor-pointer group transition-all duration-300 hover:shadow-[0_0_15px_rgba(0,255,0,0.1)]"
+                      onClick={() => doc.file && setSelectedPdf(doc)}
+                      className={`flex items-center justify-between p-4 bg-dark-lighter border border-gray-800 rounded-lg transition-all duration-300 hover:shadow-[0_0_15px_rgba(167,139,250,0.15)] ${doc.file ? 'hover:border-primary cursor-pointer' : 'cursor-default'}`}
                   >
                     <div className="flex items-center gap-4">
                       {/* Ícone com brilho no hover */}
-                      <div className="p-3 bg-dark rounded-full text-gray-400 group-hover:text-primary group-hover:shadow-[0_0_10px_#00FF00] transition-all">
+                      <div className="p-3 bg-dark rounded-full text-gray-400 group-hover:text-primary group-hover:shadow-[0_0_10px_#A78BFA] transition-all">
                         {doc.icon}
                       </div>
 
                       <div>
                         {/* Título do documento (sempre original) */}
                         <h4 className="text-white font-bold text-sm md:text-base group-hover:text-primary transition-colors">
-                          {doc.title}
+                          {language === 'pt' ? doc.titlePt : doc.titleEn}
                         </h4>
 
                         {/* Tipo traduzido (Pesquisa/Research ou Certificado/Certificate) */}
@@ -121,9 +131,11 @@ const Technologies = () => {
                       </div>
                     </div>
 
-                    <span className="text-gray-600 group-hover:text-white transform group-hover:translate-x-1 transition-all">
-                        →
-                    </span>
+                    {doc.file && (
+                      <span className="text-gray-600 group-hover:text-white transform group-hover:translate-x-1 transition-all">
+                          →
+                      </span>
+                    )}
                   </motion.div>
               ))}
             </div>

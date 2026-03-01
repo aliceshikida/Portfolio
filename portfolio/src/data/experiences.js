@@ -11,7 +11,7 @@ export const experiences = {
                 'Atuo com sistemas CRM e gestão de clientes, colaborando na análise de dados operacionais, melhoria de fluxos, otimização de processos e ajustes estratégicos em projetos e comunicações da equipe. Realizo testes, validações, customizações e otimizações de aplicativos, garantindo redução de falhas, aumento de eficiência e melhoria contínua da performance.',
             type: 'work',
             // Adicione o caminho da imagem (coloque as imagens na pasta public/logos)
-            logo: '/logos/Dti.png',
+            logo: '/logos/Hinova.webp',
             tags: ['.NET', 'Node.js', 'React', 'Scrum', 'Clean Code', 'C#']
         },
         {
@@ -46,7 +46,7 @@ export const experiences = {
             company: 'Hinova Mobile',
             description: 'I work in the development, maintenance, and continuous improvement of web and mobile applications, focusing on planning, operational quality, performance, and user experience. I actively participate in organizing demands, defining priorities, monitoring deliverables, and controlling tasks, using Azure DevOps and GitHub to ensure traceability, governance, and efficiency in processes. I work with CRM and customer management systems, collaborating in the analysis of operational data, improving workflows, optimizing processes, and making strategic adjustments to projects and team communications. I perform tests, validations, customizations, and optimizations of applications, ensuring a reduction in failures, increased efficiency, and continuous performance improvement.',
             type: 'work',
-            logo: '/logos/Dti.png',
+            logo: '/logos/Hinova.webp',
             tags: ['.NET', 'Node.js', 'React', 'Scrum', 'Clean Code', 'C#']
         },
         {

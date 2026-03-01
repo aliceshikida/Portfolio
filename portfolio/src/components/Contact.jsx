@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { LanguageContext } from '../context/LanguageContext';
 import emailjs from '@emailjs/browser';
-import {FaEnvelope, FaWhatsapp, FaLinkedin, FaGithub, FaInstagram} from 'react-icons/fa';
+import {FaEnvelope, FaWhatsapp, FaLinkedin, FaGithub} from 'react-icons/fa';
 
 const Contact = () => {
     const { language } = useContext(LanguageContext);
@@ -52,23 +52,19 @@ const Contact = () => {
                         </p>
 
                         <div className="flex flex-col gap-6">
-                            <a href="mailto:matheusfelipecorreasilva@homtail.com" className="flex items-center gap-4 text-white hover:text-primary transition-colors group">
+                            <a href="mailto:aliceshikida12@gmail.com" className="flex items-center gap-4 text-white hover:text-primary transition-colors group">
                                 <FaEnvelope size={24} className="group-hover:drop-shadow-neon" />
-                                <span>matheusfelipecorreasilva@homtail.com</span>
+                                <span>aliceshikida12@gmail.com</span>
                             </a>
-                            <a href="https://wa.me/5531971677934" className="flex items-center gap-4 text-white hover:text-primary transition-colors group">
+                            <a href="https://wa.me/5522997342358" className="flex items-center gap-4 text-white hover:text-primary transition-colors group">
                                 <FaWhatsapp size={24} className="group-hover:drop-shadow-neon" />
-                                <span>Matheus Felipe</span>
+                                <span>(22) 99734-2358</span>
                             </a>
-                            <a href="https://www.linkedin.com/in/matheus-felipe-correa-29b262265/" className="flex items-center gap-4 text-white hover:text-primary transition-colors group">
+                            <a href="https://www.linkedin.com/in/alice-shikida/?locale=en" className="flex items-center gap-4 text-white hover:text-primary transition-colors group">
                                 <FaLinkedin size={24} className="group-hover:drop-shadow-neon" />
                                 <span>LinkedIn</span>
                             </a>
-                            <a href="https://www.instagram.com/jesuix_pvd/" className="flex items-center gap-4 text-white hover:text-primary transition-colors group">
-                                <FaInstagram size={24} className="group-hover:drop-shadow-neon" />
-                                <span>Instagram</span>
-                            </a>
-                            <a href="https://github.com/MatheusFelipeCorrea" className="flex items-center gap-4 text-white hover:text-primary transition-colors group">
+                            <a href="https://github.com/aliceshikida" className="flex items-center gap-4 text-white hover:text-primary transition-colors group">
                                 <FaGithub size={24} className="group-hover:drop-shadow-neon" />
                                 <span>Github</span>
                             </a>

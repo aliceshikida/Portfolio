@@ -6,11 +6,6 @@ import { useLanguage } from '../hooks/useLanguage';
 import LanguageToggle from './LanguageToggle';
 import PDFModal from './PDFModal';
 
-// --- 1. IMPORTANTE: Importe as duas logos aqui ---
-// Certifique-se que os nomes dos arquivos na pasta assets estão iguais a estes:
-import logoPT from '../assets/LogoPortfolio.png';
-import logoEN from '../assets/Logo-EN.png'; // Caso não tenha ainda, crie uma cópia da outra com esse nome para testar
-
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isCVOpen, setIsCVOpen] = useState(false);
@@ -28,21 +23,14 @@ const Navbar = () => {
         ? { file: '/pdfs/CV-PTBR.pdf', title: 'Meu Currículo (PT-BR)' }
         : { file: '/pdfs/CV-EN.pdf', title: 'My Resume (EN)' };
 
-    // --- 2. Lógica para escolher a logo certa ---
-    const currentLogo = language === 'pt' ? logoPT : logoEN;
-
     return (
         <>
             <nav className="fixed w-full z-40 top-0 left-0 bg-dark-bg/80 backdrop-blur-md border-b border-white/10">
                 <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
-                    {/* LOGO DINÂMICA */}
-                    <a href="#" className="flex items-center gap-2">
-                        <img
-                            src={currentLogo} // <--- 3. Aqui usamos a variável dinâmica
-                            alt="Logo Matheus"
-                            className="h-12 w-auto object-contain hover:scale-110 transition-transform duration-300"
-                        />
+                    {/* Nome / Home */}
+                    <a href="#" className="text-white font-orbitron font-bold text-lg hover:text-primary transition-colors">
+                        Alice Shikida
                     </a>
 
                     {/* Desktop Menu */}
@@ -64,7 +52,7 @@ const Navbar = () => {
                             <li>
                                 <button
                                     onClick={() => setIsCVOpen(true)}
-                                    className="flex items-center gap-2 px-4 py-2 border border-primary text-primary rounded hover:bg-primary hover:text-dark transition-all duration-300 text-sm font-bold font-orbitron shadow-[0_0_10px_rgba(0,255,0,0.2)] hover:shadow-[0_0_20px_rgba(0,255,0,0.6)] cursor-pointer"
+                                    className="flex items-center gap-2 px-4 py-2 border border-primary text-primary rounded hover:bg-primary hover:text-dark transition-all duration-300 text-sm font-bold font-orbitron shadow-[0_0_10px_rgba(167,139,250,0.2)] hover:shadow-[0_0_20px_rgba(167,139,250,0.5)] cursor-pointer"
                                 >
                                     <FaFileAlt />
                                     CV

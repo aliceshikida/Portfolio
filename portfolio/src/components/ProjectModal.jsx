@@ -29,7 +29,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.9 }}
-                    className="relative w-full max-w-4xl bg-[#0F0F0F] border border-primary/30 rounded-xl overflow-hidden shadow-[0_0_30px_rgba(0,255,0,0.1)]"
+                    className="relative w-full max-w-4xl bg-[#0F0F0F] border border-primary/30 rounded-xl overflow-hidden shadow-[0_0_30px_rgba(167,139,250,0.1)]"
                     onClick={(e) => e.stopPropagation()}
                 >
 
@@ -87,7 +87,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
                                 href={projectLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="w-full py-4 border border-white text-white rounded-lg flex items-center justify-center gap-3 transition-all duration-300 group hover:bg-primary hover:border-primary hover:text-black hover:shadow-[0_0_20px_#00FF00]"
+                                className="w-full py-4 border border-white text-white rounded-lg flex items-center justify-center gap-3 transition-all duration-300 group hover:bg-primary hover:border-primary hover:text-black hover:shadow-[0_0_20px_#A78BFA]"
                             >
                                 <FaGithub className="text-xl" /> {/* Mudei para ícone do Github já que é um githubUrl */}
                                 <span className="font-bold text-lg font-orbitron tracking-wide">

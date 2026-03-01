@@ -7,7 +7,7 @@ const { language, toggleLanguage } = useLanguage();
 return (
   <motion.button
     onClick={toggleLanguage}
-    className="relative w-16 h-8 bg-dark-lighter rounded-full border-2 border-primary flex items-center px-1 hover:border-green-400 transition-colors"
+    className="relative w-16 h-8 bg-dark-lighter rounded-full border-2 border-primary flex items-center px-1 hover:border-primary transition-colors"
     whileTap={{ scale: 0.95 }}
     title={language === 'pt' ? 'Mudar para Inglês' : 'Switch to Portuguese'}
   >

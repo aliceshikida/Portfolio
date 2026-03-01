@@ -7,8 +7,8 @@ export default {
     theme: {
         extend: {
             colors: {
-                primary: '#00FF00',
-                secondary: '#0A4D0A',
+                primary: '#A78BFA',
+                secondary: '#5B21B6',
                 dark: '#0A0A0A',
                 'dark-lighter': '#1A1A1A',
             },
@@ -17,12 +17,12 @@ export default {
                 orbitron: ['Orbitron', 'sans-serif'],
                 mono: ['Orbitron', 'monospace'],
             },
-            // ADIÇÃO SUGERIDA: Efeito de brilho neon
+            // Efeito de brilho sutil (roxo)
             boxShadow: {
-                'neon': '0 0 10px rgba(0, 255, 0, 0.5), 0 0 20px rgba(0, 255, 0, 0.3)',
+                'neon': '0 0 10px rgba(167, 139, 250, 0.4), 0 0 20px rgba(167, 139, 250, 0.2)',
             },
             dropShadow: {
-                'neon': '0 0 5px rgba(0, 255, 0, 0.8)',
+                'neon': '0 0 5px rgba(167, 139, 250, 0.6)',
             }
         },
     },

@@ -1,8 +1,6 @@
 import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import { LanguageContext } from '../context/LanguageContext'; // Ou useLanguage hook se preferir
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import Perfilimg from '../assets/Logo-EN.png';
 import { content } from '../data/content';
 
 const Hero = () => {
@@ -10,19 +8,19 @@ const Hero = () => {
     const text = content[language].hero;
 
     return (
-        <section id="about" className="min-h-screen flex items-center justify-center bg-dark relative overflow-hidden pt-20">
-
+        <section id="about" className="min-h-screen bg-dark relative overflow-hidden pt-20 pb-20 flex items-center">
             {/* Background Glow */}
             <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[128px]" />
             <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-[128px]" />
 
-            <div className="container mx-auto px-6 z-10 grid md:grid-cols-2 gap-12 items-center">
+            <div className="container mx-auto px-6 z-10 w-full">
 
-                {/* Coluna de Texto */}
+                {/* Coluna de Texto — mesma largura máxima que Contact para alinhar com o resto da página */}
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
+                    className="max-w-2xl"
                 >
                     {/* Saudação */}
                     <h2 className="text-primary font-orbitron text-lg mb-2 tracking-wider">
@@ -32,7 +30,7 @@ const Hero = () => {
                     {/* Nome */}
                     <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 leading-tight">
                         Alice <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-green-400">
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-violet-400">
                            Shikida
                         </span>
                     </h1>
@@ -68,16 +66,6 @@ const Hero = () => {
                                 {text.cta2 || (language === 'pt' ? 'Contato' : 'Contact')}
                             </a>
                         </div>
-
-                        {/* Ícones Sociais */}
-                        <div className="flex gap-4 text-gray-400">
-                            <a href="https://github.com/MatheusFelipeCorrea" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
-                                <FaGithub size={24} />
-                            </a>
-                            <a href="https://www.linkedin.com/in/matheus-felipe-correa-29b262265/" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">
-                                <FaLinkedin size={24} />
-                            </a>
-                        </div>
                     </div>
 
                     {/* --- ÁREA DE BADGES (PUC / DTI) --- */}
@@ -105,18 +93,6 @@ const Hero = () => {
 
                 </motion.div>
 
-                {/* Coluna da Imagem */}
-                <motion.div
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.8 }}
-                    className="relative flex justify-center"
-                >
-                    <div className="relative w-72 h-72 md:w-96 md:h-96">
-                        <div className="absolute inset-0 border-2 border-primary rounded-2xl transform translate-x-4 translate-y-4"></div>
-                        
-                    </div>
-                </motion.div>
 
             </div>
         </section>
