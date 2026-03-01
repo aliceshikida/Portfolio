@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import { LanguageContext } from '../context/LanguageContext'; // Ou useLanguage hook se preferir
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import Perfilimg from '../assets/FotoPerfil.jpg';
+import Perfilimg from '../assets/Logo-EN.png';
 import { content } from '../data/content';
 
 const Hero = () => {
@@ -31,9 +31,9 @@ const Hero = () => {
 
                     {/* Nome */}
                     <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 leading-tight">
-                        Matheus <br />
+                        Alice <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-green-400">
-                           Felipe
+                           Shikida
                         </span>
                     </h1>
 
@@ -98,17 +98,7 @@ const Hero = () => {
                         </div>
 
                         {/* Badge dti digital */}
-                        <div className="flex items-center gap-3 bg-white/5 px-4 py-2 rounded-lg border border-white/5 hover:border-primary/30 transition-colors group">
-                            <div className="w-10 h-10 rounded-full bg-white p-1 overflow-hidden flex items-center justify-center">
-                                <img src="/logos/Dti.png" alt="dti digital" className="w-full h-full object-contain" />
-                            </div>
-                            <div className="text-sm">
-                                <div className="font-bold text-white group-hover:text-primary transition-colors">dti digital</div>
-                                <div className="text-gray-400 text-xs font-orbitron">
-                                    {language === 'pt' ? 'Estagiário Full-Stack' : 'Full-Stack Intern'}
-                                </div>
-                            </div>
-                        </div>
+
 
                     </div>
                     {/* --- FIM DAS BADGES --- */}
@@ -124,9 +114,7 @@ const Hero = () => {
                 >
                     <div className="relative w-72 h-72 md:w-96 md:h-96">
                         <div className="absolute inset-0 border-2 border-primary rounded-2xl transform translate-x-4 translate-y-4"></div>
-                        <div className="absolute inset-0 border-2 border-gray-700 rounded-2xl bg-dark-lighter overflow-hidden">
-                            <img src={Perfilimg} alt={text.name} className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity duration-500" />
-                        </div>
+                        
                     </div>
                 </motion.div>
 

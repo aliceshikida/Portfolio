@@ -9,9 +9,9 @@ pt: {
   },
   hero: {
     greeting: 'Oie, eu sou',
-    name: 'Matheus Felipe Correa',
-    title: 'Engenheiro de Software',
-    description: 'Estudante de Engenharia de Software na PUC Minas e Estagiário Full-Stack na dti digital. Focado em criar soluções robustas unindo a performance do .NET e Node.js com a interatividade do React. Busco sempre o equilíbrio entre código limpo e uma excelente experiência do usuário (UX).',
+    name: 'Alice Shikida',
+    title: 'Engenheira de Software',
+    description: 'Estudante de Engenharia de Software na PUC Minas e Estagiária em Desenvolvimento Mobile na Hinova Mobile. Tenho também experiência com automações e integrações, desenvolvendo soluções que conectam sistemas por meio de APIs REST e serviços em nuvem.',
     cta: 'Ver Projetos',
     cta2: 'Entrar em contato',
     downloadCV: 'Baixar Currículo'
@@ -20,8 +20,7 @@ pt: {
     title: 'Sobre Mim',
     description: [
       'Sou estudante de Engenharia de Software apaixonado por tecnologia e inovação.',
-      'Tenho experiência em desenvolvimento web full stack, com foco em React, Node.js e bancos de dados modernos.',
-      'Busco constantemente aprender novas tecnologias e aplicar as melhores práticas de desenvolvimento.'
+
     ],
     research: 'Ver Pesquisa',
     certificates: 'Ver Certificados',
@@ -67,9 +66,9 @@ en: {
   },
   hero: {
     greeting: 'Hi, I am',
-    name: 'Matheus Felipe Correa',
+    name: 'Alice Shikida',
     title: 'Software Engineer',
-    description: 'Software Engineering student at PUC Minas and Full-Stack Intern at dti digital. Focused on creating robust solutions by combining the performance of .NET and Node.js with the interactivity of React. I always strive for a balance between clean code and an excellent user experience (UX).',
+    description: 'Software Engineering student at PUC Minas',
     cta: 'View Projects',
     cta2: 'Reach out',
     downloadCV: 'Download CV'
@@ -78,7 +77,7 @@ en: {
     title: 'About Me',
     description: [
       'I am a Software Engineering student passionate about technology and innovation.',
-      'I have experience in full stack web development, focusing on React, Node.js and modern databases.',
+      'I have experience in Mobile and web development, focusing on Xcode, Swift, Kotlin, AndroidStudio and modern databases.',
       'I constantly seek to learn new technologies and apply best development practices.'
     ],
     research: 'View Research',

@@ -49,24 +49,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    {/* Badge dti digital */}
-                    <div className="flex items-center gap-3 bg-white/5 px-5 py-3 rounded-xl border border-white/5 hover:border-primary/30 transition-all duration-300 hover:bg-white/10 group">
-                        <div className="w-10 h-10 rounded-lg bg-white p-1 overflow-hidden flex items-center justify-center">
-                            <img
-                                src="/logos/Dti.png"
-                                alt="dti digital"
-                                className="w-full h-full object-contain"
-                            />
-                        </div>
-                        <div className="text-left">
-                            <div className="font-bold text-white text-sm group-hover:text-primary transition-colors">
-                                dti digital
-                            </div>
-                            <div className="text-gray-400 text-xs font-orbitron tracking-wide">
-                                {text.dtiRole}
-                            </div>
-                        </div>
-                    </div>
+
 
                 </div>
 
