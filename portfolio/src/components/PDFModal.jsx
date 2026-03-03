@@ -26,21 +26,21 @@ return (
         >
           <motion.div
             onClick={(e) => e.stopPropagation()}
-            className="bg-dark-lighter border-2 border-primary rounded-2xl w-full max-w-6xl h-[90vh] flex flex-col"
+            className="relative bg-dark-lighter border-2 border-primary rounded-2xl w-full max-w-6xl h-[90vh] flex flex-col overflow-hidden"
           >
-            {/* Header */}
-            <div className="flex justify-between items-center p-6 border-b-2 border-primary">
-              <h2 className="text-2xl font-bold text-primary">{title}</h2>
+            {/* Apenas o PDF (páginas) — botão fechar em cima */}
+            <div className="absolute top-2 right-2 z-10">
               <button
                 onClick={onClose}
-                className="text-white hover:text-primary transition-colors"
+                className="p-2 rounded-lg bg-black/60 text-white hover:text-primary hover:bg-black/80 transition-colors"
+                aria-label="Fechar"
               >
-                <IoClose size={28} />
+                <IoClose size={24} />
               </button>
             </div>
 
-            {/* PDF Viewer */}
-            <div className="flex-1 relative">
+            {/* PDF Viewer — ocupa todo o espaço */}
+            <div className="flex-1 relative min-h-0">
               {loading && (
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="animate-spin rounded-full h-12 w-12 border-4 border-primary border-t-transparent" />

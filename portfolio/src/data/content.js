@@ -68,7 +68,7 @@ en: {
     greeting: 'Hi, I am',
     name: 'Alice Shikida',
     title: 'Software Engineer',
-    description: 'Software Engineering student at PUC Minas',
+    description: 'Software Engineering student at PUC Minas and Mobile Development Intern at Hinova Mobile. I also have experience with automation and integration, developing solutions that connect systems through REST APIs and cloud services.',
     cta: 'View Projects',
     cta2: 'Reach out',
     downloadCV: 'Download CV'

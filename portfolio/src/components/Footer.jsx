@@ -1,6 +1,8 @@
 import React from 'react';
 import { useLanguage } from '../hooks/useLanguage';
 
+const COPYRIGHT_NAME = 'Alice Shikida';
+
 const Footer = () => {
     const { language } = useLanguage();
     const currentYear = new Date().getFullYear();
@@ -59,7 +61,7 @@ const Footer = () => {
                 {/* 3. Copyright */}
                 <div className="text-center">
                     <p className="text-gray-500 text-sm font-orbitron">
-                        &copy; {currentYear} <span className="text-white font-bold">Matheus Felipe Correa</span> · {text.copyright}
+                        &copy; {currentYear} <span className="text-white font-bold">{COPYRIGHT_NAME}</span> · {text.copyright}
                     </p>
                 </div>
             </div>
