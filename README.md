@@ -88,7 +88,7 @@ A organização do projeto segue as diretrizes da Sprint 03 do Laboratório:
 ## 👤 Alice Shikida
 | Home PT | Home EN |
 | --- | --- |
-| <img src="/caminho/para/print-pt.png" width="250px" alt="Versão PT"> | <img src="/caminho/para/print-en.png" width="250px" alt="Versão EN"> |
+| <img src="./Documents/Prints/fotopt.png" width="250px" alt="Versão PT"> | <img src="./Documents/Prints/fotoen.png" width="250px" alt="Versão EN"> |
 
 
 ## 📄 Licença
